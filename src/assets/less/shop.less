@@ -1,0 +1,148 @@
+.shop {
+    padding-bottom: 50px;
+
+    /deep/ .van-nav-bar__left {
+        .van-icon {
+            color: #D0563F;
+        }
+    }
+
+    /deep/ .van-nav-bar__right {
+        .van-nav-bar__text {
+            color: #D0563F;
+        }
+    }
+
+    //商品信息
+    .shopDetails {
+
+        // padding: 0 10px;
+        /deep/ .shopbag-remove-btn {
+            height: 100%;
+        }
+
+        .clearshopcar {
+            border: none;
+            width: 90px;
+            height: 35px;
+            line-height: 35px;
+            color: #C0BFBD;
+            position: relative;
+            right: -270px;
+
+            &::before {
+                content: '';
+                margin-right: 10px;
+                display: inline-block;
+                width: 18px;
+                height: 18px;
+                background: url('../images/trash.png') no-repeat;
+                background-size: 100%;
+                vertical-align: middle;
+            }
+        }
+
+        .shopbox {
+            width: 100%;
+            height: 100px;
+            border: 1px solid #F3EFEC;
+            background: white;
+            display: flex;
+
+            .shopbox_left {
+                display: flex;
+                align-items: center;
+
+                /*垂直居中*/
+                .check {
+                    margin: 0 15px;
+                    display: flex;
+                    align-items: center;
+
+                    /deep/ .van-checkbox__icon--checked .van-icon {
+                        background-color: #D0563F;
+                        border-color: #D0563F;
+                    }
+                }
+
+                .shopImg {
+                    width: 70px;
+                    height: 70px;
+                    display: flex;
+                    align-items: center;
+
+                    /*垂直居中*/
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 10px;
+                    }
+                }
+            }
+
+            .shopbox_right {
+                padding: 15px 10px;
+
+                .shopbox_right_top,
+                .shopbox_right_middle {
+                    margin-bottom: 7px;
+                }
+
+                .shopbox_right_top {
+                    font-size: 15px;
+                }
+
+                .shopbox_right_middle {
+                    color: #B6B6B6;
+                }
+
+                .shopbox_right_bottom {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 230px;
+
+                    .shopbox_right_bottom_left {
+                        font-size: 15px;
+                        color: #D0563F;
+                    }
+
+                    .shopbox_right_bottom_right {
+                        /deep/ .van-stepper__plus {
+                            background-color: #D0563F;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /deep/ .van-submit-bar__bar {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /deep/ .van-submit-bar {
+        position: static;
+
+        /deep/ .van-submit-bar__bar {
+            padding: 0 10px;
+        }
+
+        /deep/ .van-submit-bar__text {
+            // text-align: left;
+        }
+
+        /deep/ .van-submit-bar__button--danger {
+            background: #D0563F;
+        }
+
+        /deep/ .van-checkbox {
+            margin-left: 5px;
+        }
+
+        /deep/ .van-checkbox__icon--checked .van-icon {
+            background-color: #D0563F;
+            border-color: #D0563F;
+        }
+    }
+}

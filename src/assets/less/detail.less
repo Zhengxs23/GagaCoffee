@@ -1,0 +1,124 @@
+.detail {
+    /deep/ .van-nav-bar__left .van-icon {
+        color: #D0563F;
+    }
+
+    .detail_img {
+        img {
+            width: 100%;
+        }
+    }
+
+    .detail_info {
+        // height: 600px;
+        border-radius: 20px;
+        // background-color: #F7F7F7;
+        // background-color: skyblue;
+        margin: 0 auto;
+        position: relative;
+        top: -20px;
+        padding: 0 10px;
+        padding-top: 10px;
+        margin-bottom: 90px;
+
+
+        .detail_info_top {
+            background-color: white;
+            padding: 0 5px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+
+            .detail_title {
+                font-size: 20px;
+                font-weight: bold;
+            }
+
+            .detail_choose {
+                margin: 10px 0;
+                color: #868686;
+                display: flex;
+            }
+
+            .detail_classify {
+                .detail_type {
+                    font-size: 16px;
+                    font-weight: 550;
+                    margin-bottom: 15px;
+                }
+
+                .detail_type_choose {
+                    display: flex;
+
+                    .details_type_box {
+                        width: 100px;
+                        height: 40px;
+                        line-height: 40px;
+                        border-radius: 10px;
+                        background: #F8F8F8;
+                        margin-right: 10px;
+                        text-align: center;
+                        color: #999999;
+                        font-size: 13px;
+                    }
+
+                    .active {
+                        background-color: #ebab9b;
+                        color: #BE6A64;
+                    }
+                }
+            }
+        }
+
+        .detail_info_bottom {
+            margin-top: 15px;
+            background-color: white;
+            padding: 10px 5px;
+
+            .detail_info_bottom_information {
+                font-size: 20px;
+                font-weight: bold;
+                margin: 10px 0;
+            }
+
+            .detail_introduction {
+                color: #878787;
+                word-wrap: break-word; //自动换行
+            }
+        }
+    }
+
+    .detail_bottom {
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 48px;
+        background-color: white;
+        padding: 0 5px;
+        padding-right: 10px;
+
+        .detail_quantity {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0px;
+            height: 50px;
+            line-height: 50px;
+
+            span {
+                display: inline-block;
+                font-size: 18px;
+                color: #D05140;
+            }
+        }
+
+        .detail_c_navigation {}
+    }
+
+
+    p {
+        padding: 0;
+        margin: 0;
+    }
+}

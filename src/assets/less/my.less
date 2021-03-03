@@ -1,0 +1,97 @@
+.my{
+    .my-bg{
+      height: 200px;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  
+    /deep/ .van-uploader{
+      display: block;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+    }
+  
+    /deep/ .van-uploader__wrapper{
+      height: 100%;
+    }
+  
+    /deep/ .van-uploader__upload{
+      margin: 0;
+      width: 100%;
+      height: 100%;
+    }
+  
+    .my-box{
+      background-image: linear-gradient(to bottom, rgba(255, 255, 255, .65) 0px, rgba(255, 255, 255, .65) 40px, #fff 40px);
+      padding: 10px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      position: relative;
+      top: -40px;
+      margin: 0 10px;
+    }
+  
+    .my-info{
+      display: flex;
+    }
+  
+    .my-img{
+      width: 60px;
+      height: 60px;
+      background-color: #f5f5f5;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-right: 10px;
+      position: relative;
+      .auto-img{
+          width: 100%;
+      }
+    }
+  
+    .up-img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        cursor: pointer;
+        opacity: 0;
+    }
+  
+    .my-text{
+      width: calc(100% - 70px);
+    }
+  
+    .my-name{
+      height: 30px;
+      line-height: 30px;
+      color: #D0563F;
+      font-size: 14px;
+      font-weight: bold;
+    }
+  
+    .my-desc{
+      font-size: 14px;
+      color: #666;
+      height: 30px;
+      line-height: 30px;
+    }
+  
+    .my-list{
+      margin-top: 60px;
+    }
+  
+    /deep/ .van-cell{
+      padding: 10px 0;
+      &:active{
+        background-color: #fff;
+      }
+    }
+    /deep/ .van-button{
+      font-size: 13px;
+      color: red;
+    }
+  }

@@ -1,0 +1,101 @@
+.myself {
+    /deep/ .van-nav-bar__left .van-icon {
+        color: #D0563F;
+    }
+
+    .myself_bg {
+        img {
+            width: 100%;
+            opacity: .8;
+        }
+    }
+
+    .myselfData {
+        padding: 0 20px;
+        font-size: 16px;
+        font-weight: bold;
+
+        .myslef_logo {
+            width: 80px;
+            text-align: right;
+        }
+
+        .myself_img {
+            width: 120px;
+            height: 120px;
+            position: relative;
+            margin: 50px auto;
+            font-size: 13px;
+            text-align: center;
+            font-weight: 500;
+            color: #D0563F;
+
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+            }
+
+            .up-img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                cursor: pointer;
+                opacity: 0;
+            }
+        }
+
+        .myself_id,
+        .myself_name,
+        .myself_desc {
+            display: flex;
+            height: 50px;
+            line-height: 50px;
+            border-bottom: 1px solid rgb(187, 186, 186);
+
+            &:last-child {
+                border-bottom: none;
+            }
+
+            .myself_id_son,
+            .myself_name_son,
+            .myself_desc_son {
+                font-size: 14px;
+                color: grey;
+                margin-left: 10px;
+            }
+
+        }
+
+        .myself_id {
+            border-top: 1px solid rgb(187, 186, 186);
+            margin-top: 20px;
+
+        }
+
+    }
+
+    .desc {
+        height: 250px;
+        width: 100%-1px;
+
+        .desc_text {
+            margin-top: 50px;
+            width: 100%;
+            height: 100px;
+            resize: none;
+            border: none;
+        }
+
+        .desc-btn {
+            padding: 0 120px;
+
+            /deep/ .van-button {
+                background-color: #D0563F;
+            }
+        }
+    }
+}

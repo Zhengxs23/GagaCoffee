@@ -1,0 +1,109 @@
+.pay {
+    padding-bottom: 64px;
+    .bg {
+        height: 60px;
+        width: 100%;
+        background-color: #D0563F;
+        position: absolute;
+        z-index: -1;
+    }
+
+    .address-box {
+        background: white;
+        border: 1px solid white;
+        border-radius: 10px;
+        margin: 0 10px;
+        margin-top: 40px;
+        padding: 0 10px;
+        padding-bottom: 10px;
+
+        .adress-title {
+            color: grey;
+        }
+
+        .address-detail {
+            .address-detail-top {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 5px;
+
+                .address-detail-top-left {
+                    display: flex;
+
+                    .address-default {
+                        width: 40px;
+                        height: 20px;
+                        line-height: 20px;
+                        background: #D0563F;
+                        margin-right: 10px;
+                        text-align: center;
+                        color: white;
+                        border-radius: 10px;
+                    }
+
+                    .address-address {
+                        font-size: 14px;
+                        font-weight: bold;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 2;
+                        -webkit-box-orient: vertical;
+                        overflow: hidden;
+                    }
+                }
+
+                .address-detail-top-right {
+                    /deep/ .van-icon {
+                        margin-top: 4px;
+                    }
+                }
+            }
+
+            .address-detail-bottom {
+                display: flex;
+
+                .address-people {}
+            }
+        }
+    }
+
+    .pay-info {
+        background-color: #fff;
+        padding: 10px;
+        border-radius: 10px;
+        margin: 0 10px;
+        margin-top: 10px;
+    }
+
+    .address {
+        padding-top: 20px;
+    }
+
+    /deep/ .van-address-item {
+        padding: 0.42rem;
+    }
+
+    /deep/ .van-tag--danger {
+        background-color: #D05140;
+    }
+
+    /deep/ .van-button--danger {
+        border-color: #D05140;
+        background-color: #D05140;
+    }
+
+    /deep/ .van-address-item .van-radio__icon--checked .van-icon {
+        border-color: #D05140;
+        background-color: #D05140;
+    }
+    /deep/ .van-address-item__edit{
+        // display: none;
+    }
+    .pay-btn{
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        padding: 10px;
+        width: calc(100% - 20px);
+        background-color: #FFFFFF;
+    }
+}
